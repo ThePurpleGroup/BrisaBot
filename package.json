@@ -1,0 +1,17 @@
+{
+  "name": "brisabot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node bot.js"
+  },
+  "author": "purple",
+  "license": "ISC"
+}
