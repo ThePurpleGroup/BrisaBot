@@ -28,13 +28,6 @@ tweetBot.get('search/tweets', params,  (err, data, res) => {
                     console.log(err.message)
                 }
             })
-            tweetBot.post('favorites/create', tweetID, (err, res) => {
-                if(!err){
-                    console.log(`Favorite successful` + i)
-                }else{
-                    console.log(err.message)
-                }
-            })
         }
     }else{
         console.log(err)
@@ -52,13 +45,7 @@ tweetBot.get('search/tweets', nearparams,  (err, data, res) => {
                     console.log(err.message)
                 }
             })
-            tweetBot.post('favorites/create', tweetID, (err, res) => {
-                if(!err){
-                    console.log(`Favorite Recent successful` + i)
-                }else{
-                    console.log(err.message)
-                }
-            })
+
         }
     }else{
         console.log(err)
