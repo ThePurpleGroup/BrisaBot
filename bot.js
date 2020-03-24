@@ -5,14 +5,14 @@ const tweetBot = new Twit(config);
 const params = {
     q: 'Maconha',
     result_type: 'popular',
-    count: 70,
+    count: 100,
     lang: 'pt'
 }
 
 const nearparams = {
     q: 'Maconha',
     result_type: 'recent',
-    count: 30,
+    count: 100,
     lang: 'pt'
 }
 
@@ -64,3 +64,4 @@ tweetBot.get('search/tweets', nearparams,  (err, data, res) => {
         console.log(err)
     }
 })
+
